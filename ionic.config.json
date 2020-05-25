@@ -1,5 +1,7 @@
 {
   "name": "RATP",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
