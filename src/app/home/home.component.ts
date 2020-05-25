@@ -1,17 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { 
-  GoogleMaps, 
-  GoogleMap, 
-  GoogleMapsMapTypeId,
-  GoogleMapsEvent,
-  GoogleMapOptions,
-  CameraPosition,
-  MarkerOptions,
-  Marker,
-  Environment 
-} from '@ionic-native/google-maps';
-
-import { ActionSheetController, Platform, AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -19,40 +6,10 @@ import { ActionSheetController, Platform, AlertController } from '@ionic/angular
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-
-  map: GoogleMap;
-
-  constructor(
-    public alertController: AlertController,
-    public actionCtrl: ActionSheetController,
-    private platform: Platform
-  ) { 
-    if (this.platform.is('cordova')) {
-      if(this.platform.ready()) {
-        this.loadMap();
-      }
-    }
-  }
+  
+  constructor() {}
 
   ngOnInit() {
-  }
-
-  loadMap() {
-    Environment.setEnv({
-      API_KEY_FOR_BROWSER_RELEASE: 'AIzaSyCZbs9_xkVXfOYdFadzvCUbiwkVQGEjv5k',
-		  API_KEY_FOR_BROWSER_DEBUG: ''
-    });
-    
-    this.map = GoogleMaps.create('map_canvas', {
-      camera: {
-        target: {
-          lat: 43.610769,
-				  lng: 3.876716
-        },
-        zoom: 12,
-        tilt: 30
-      }
-    })
   }
 
 }
