@@ -7,6 +7,7 @@ import { TabsComponent } from './pages/tabs/tabs.component';
 import { StationMainComponent } from './pages/stations/station-main/station-main.component';
 import { TitresMainComponent } from './pages/titres/titres-main/titres-main.component';
 import { InformationsMainComponent } from './pages/infos/informations-main/informations-main.component';
+import { AddStationComponent } from './pages/stations/add-station/add-station.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'stations',
     component: StationMainComponent
+  },
+  {
+    path: 'addstation',
+    component: AddStationComponent
   },
   {
     path: 'titres',

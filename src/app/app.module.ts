@@ -29,6 +29,7 @@ import { TitresMainComponent } from './pages/titres/titres-main/titres-main.comp
 
 // Stations
 import { StationMainComponent } from './pages/stations/station-main/station-main.component';
+import { AddStationComponent } from './pages/stations/add-station/add-station.component';
 
 // Infos
 import { InformationsMainComponent } from './pages/infos/informations-main/informations-main.component';
@@ -50,6 +51,7 @@ import { InformationsMainComponent } from './pages/infos/informations-main/infor
 
     // Stations
     StationMainComponent,
+    AddStationComponent,
 
     // Informations
     InformationsMainComponent,
@@ -57,7 +59,7 @@ import { InformationsMainComponent } from './pages/infos/informations-main/infor
   entryComponents: [],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(),
+    IonicModule.forRoot({animated: false}),
     AppRoutingModule,
   ],
   providers: [

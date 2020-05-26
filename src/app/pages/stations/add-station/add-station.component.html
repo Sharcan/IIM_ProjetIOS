@@ -1,0 +1,42 @@
+
+<ion-header>
+  <ion-toolbar>
+    <a slot="start" class="ion-padding topLink" routerLink="/stations">précédent</a>
+    <ion-title>STATIONS</ion-title>
+    <a slot="end" class="ion-padding topLink" routerLink="/stations">valider</a>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div class="searchBar">
+    <ion-searchbar animated></ion-searchbar>
+  </div>
+
+
+  <ion-card class="cardResultSearch">
+    <ion-list>
+
+      <ion-item class="ion-padding">
+        <ion-avatar slot="start">
+          <img src="./assets/img/maxresdefault.jpg">
+        </ion-avatar>
+        <ion-label>Versailles Chantier</ion-label>
+      </ion-item>
+
+      <ion-item class="ion-padding">
+        <ion-avatar slot="start">
+          <img src="./assets/img/maxresdefault.jpg">
+        </ion-avatar>
+        <ion-label>Versailles Chantier</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+</ion-content>
+
+
+<ion-footer>
+  <app-tabs></app-tabs>
+</ion-footer>

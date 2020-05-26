@@ -1,47 +1,70 @@
 <ion-header>
   <ion-toolbar>
     <ion-title slot="secondary">STATIONS</ion-title>
-    <a routerLink="/home" slot="end" class="ion-padding topLink">ajouter</a>
+    <a slot="end" class="ion-padding topLink" routerLink="/addstation">ajouter</a>
   </ion-toolbar>
 </ion-header>
 
 
 
 <ion-content>
-  <ion-card style="background-color: white;">
-    <ion-card-header>
- 
-      <ion-card-title style="color: black; float: left; font-size: 1.4rem;" class="ion-padding">
-        La Défense
-      </ion-card-title>
- 
-      <ion-select placeholder="Choisir une ligne" class="ion-padding selectLine">
-        <ion-select-option value="L">Ligne L</ion-select-option>
-        <ion-select-option value="U">Ligne U</ion-select-option>
-      </ion-select>
- 
-    </ion-card-header>
+  <ion-item-sliding>
 
-    <ion-card-content>
-      <ion-grid>
-        <ion-row>
+    <!--REMOVE-->
+    <ion-item-options side="start">
+      <ion-item-option color="danger" expandable style="font-size: 1.7rem;">
+        <ion-icon name="trash" slot="icon-only"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
 
-          <ion-col>
-            2min
-          </ion-col>
+    <!--CARD-->
+    <ion-item style="border: none;">
+      <ion-card style="background-color: white;">
+        <ion-card-header>
+     
+          <ion-card-title style="color: black; float: left; font-size: 1.4rem;" class="ion-padding">
+            La Défense
+          </ion-card-title>
+     
+          <ion-select placeholder="Choisir une ligne" class="ion-padding selectLine">
+            <ion-select-option value="L">Ligne L</ion-select-option>
+            <ion-select-option value="U">Ligne U</ion-select-option>
+          </ion-select>
+     
+        </ion-card-header>
+    
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+    
+              <ion-col>
+                  2min
+              </ion-col>
+    
+              <ion-col>
+                Ligne L
+              </ion-col>
+    
+              <ion-col>
+                <ion-icon name="information-circle"></ion-icon>
+              </ion-col>
+    
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
 
-          <ion-col>
-            Ligne L
-          </ion-col>
+    <!--ADD TO BOOKMARK-->
+    <ion-item-options>
+      <ion-item-option color="warning" slot="end" expandable>
+        <ion-icon slot="icon-only" name="star"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
 
-          <ion-col>
-            <ion-icon name="information-circle"></ion-icon>
-          </ion-col>
 
-        </ion-row>
-      </ion-grid>
-    </ion-card-content>
-  </ion-card>
+
 </ion-content>
     
 <ion-footer>
