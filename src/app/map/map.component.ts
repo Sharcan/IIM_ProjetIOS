@@ -27,8 +27,6 @@ export class MapComponent implements OnInit, AfterViewInit {
       resp => {
         this.latitude = resp.coords.latitude;
         this.longitude = resp.coords.longitude;
-        console.log(this.latitude);
-
 
         this.map = L.map('map', {
           center: [this.latitude, this.longitude],
@@ -39,8 +37,15 @@ export class MapComponent implements OnInit, AfterViewInit {
           maxZoom: 19,
           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         });
+
         tiles.addTo(this.map);
 
+        const circle = L.circle([this.latitude, this.longitude], {
+          color: 'blue',
+          fillColor: 'blue',
+          fillOpacity: 0.7,
+          radius: 3
+        }).addTo(this.map)
 
       }
     ).
