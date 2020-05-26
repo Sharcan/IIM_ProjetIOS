@@ -41,10 +41,11 @@ export class MapComponent implements OnInit, AfterViewInit {
         tiles.addTo(this.map);
 
         const circle = L.circle([this.latitude, this.longitude], {
-          color: 'blue',
-          fillColor: 'blue',
+          color: '#004FA3',
+          fillColor: '#4BC0AD',
           fillOpacity: 0.7,
-          radius: 3
+          radius: 3,
+          weight: 1.5,
         }).addTo(this.map)
 
       }
