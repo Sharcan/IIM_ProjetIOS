@@ -18,9 +18,7 @@ const routes: Routes = [
 
 
   // Tabs
-  {
-    
-  }
+
 ];
 
 @NgModule({

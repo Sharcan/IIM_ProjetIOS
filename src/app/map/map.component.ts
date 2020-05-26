@@ -54,8 +54,6 @@ export class MapComponent implements OnInit, AfterViewInit {
       console.log('Error getting location', error);
     });
 
-
-    
   }
 
 
