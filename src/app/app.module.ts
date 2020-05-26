@@ -1,4 +1,3 @@
-import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -15,11 +14,16 @@ import { MapComponent } from './map/map.component';
 // Component Native
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 
+// Components
+import { HomeComponent } from './home/home.component';
+import { TabsComponent } from './pages/tabs/tabs.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MapComponent
+    MapComponent,
+    TabsComponent
   ],
   entryComponents: [],
   imports: [
