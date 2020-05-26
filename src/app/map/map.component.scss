@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    height: 75vh;
   }
   
   .map-frame {
@@ -12,4 +13,8 @@
   
   #map {
     height: 100%;
+  }
+
+  app-tabs{
+    height: 10vh
   }
