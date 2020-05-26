@@ -17,13 +17,15 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 // Components
 import { HomeComponent } from './home/home.component';
 import { TabsComponent } from './pages/tabs/tabs.component';
+import { HoverSearchComponent } from './hover-search/hover-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MapComponent,
-    TabsComponent
+    TabsComponent,
+    HoverSearchComponent
   ],
   entryComponents: [],
   imports: [

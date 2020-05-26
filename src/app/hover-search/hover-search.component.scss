@@ -1,0 +1,53 @@
+#hoverSearch{
+    height: 29vh;
+    width: 100%;
+    background-color: #4BC0AD;
+}
+
+.searchContent{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+hr{
+    width: 20vw;
+    background-color: white;
+    height: 5px;
+    border-radius: 50px;
+}
+
+#bigButton{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    width: 100%;
+    margin: 0;
+}
+#search ion-button{
+    height: 60px;
+}
+
+#home, #work{
+    margin: 0;
+    width: 50%;
+}
+#home ion-button, #work ion-button{
+    height: 40px;
+}
+
+#littleButton{
+    width: 40vw;
+    margin: auto;
+}
+
+ion-button{
+    margin: 0;
+}
