@@ -1,6 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="secondary">STATIONS</ion-title>
+    <a routerLink="/home" slot="end" class="ion-padding topLink">ajouter</a>
+  </ion-toolbar>
+</ion-header>
+
+
+
 <ion-content>
-  <p>Salut</p>
+  <ion-card style="background-color: white;">
+    <ion-card-header>
+ 
+      <ion-card-title style="color: black; float: left; font-size: 1.4rem;" class="ion-padding">
+        La Défense
+      </ion-card-title>
+ 
+      <ion-select placeholder="Choisir une ligne" class="ion-padding selectLine">
+        <ion-select-option value="L">Ligne L</ion-select-option>
+        <ion-select-option value="U">Ligne U</ion-select-option>
+      </ion-select>
+ 
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+
+          <ion-col>
+            2min
+          </ion-col>
+
+          <ion-col>
+            Ligne L
+          </ion-col>
+
+          <ion-col>
+            <ion-icon name="information-circle"></ion-icon>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+    
 <ion-footer>
   <app-tabs></app-tabs>
 </ion-footer>

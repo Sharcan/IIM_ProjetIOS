@@ -18,6 +18,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 // Components
 import { HomeComponent } from './home/home.component';
 import { TabsComponent } from './pages/tabs/tabs.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
 
 // Favoris
 import { FavorisMainComponent } from './pages/favoris/favoris-main/favoris-main.component';
@@ -37,6 +38,7 @@ import { InformationsMainComponent } from './pages/infos/informations-main/infor
     HomeComponent,
     MapComponent,
     TabsComponent,
+    SideMenuComponent,
 
     // Favoris
     FavorisMainComponent,
