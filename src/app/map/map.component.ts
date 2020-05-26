@@ -1,6 +1,8 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
 
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
@@ -10,21 +12,46 @@ export class MapComponent implements OnInit, AfterViewInit {
 
   map;
 
-  constructor() { }
+  longitude: number;
+  latitude: number;
 
-  ngOnInit() {}
+  constructor(private geoLocation: Geolocation) { }
+
+  ngOnInit() {
+
+  }
 
   ngAfterViewInit() {
-    this.map = L.map('map', {
-      center: [39.8282, -98.5795],
-      zoom: 3
+
+    this.geoLocation.getCurrentPosition().then(
+      resp => {
+        this.latitude = resp.coords.latitude;
+        this.longitude = resp.coords.longitude;
+        console.log(this.latitude);
+
+
+        this.map = L.map('map', {
+          center: [this.latitude, this.longitude],
+          zoom: 18
+        });
+
+        const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        });
+        tiles.addTo(this.map);
+
+
+      }
+    ).
+    catch(error => {
+      console.log('Error getting location', error);
     });
 
-    const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    });
-    tiles.addTo(this.map);
+
+    
   }
+
+
 
 }
