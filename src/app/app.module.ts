@@ -8,6 +8,11 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MapComponent } from './map/map.component';
+
+
+// Component Native
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 // Components
 import { HomeComponent } from './home/home.component';
@@ -17,7 +22,8 @@ import { TabsComponent } from './pages/tabs/tabs.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    TabsComponent,
+    MapComponent,
+    TabsComponent
   ],
   entryComponents: [],
   imports: [
@@ -27,6 +33,7 @@ import { TabsComponent } from './pages/tabs/tabs.component';
   ],
   providers: [
     StatusBar,
+    Geolocation,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
