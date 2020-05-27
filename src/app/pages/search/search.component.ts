@@ -14,22 +14,16 @@ export class SearchComponent implements OnInit {
   constructor(private modalController: ModalController, public addressService: AddressService) { }
 
   ngOnInit() {
-    this.addressService.load().then(data => {
-      this.addresses = data;
-    })
+    this.addressService.load().subscribe(data => {
+      this.addresses = data['features'];
+      console.log(this.addresses);
+    });
   }
 
   dismiss() {
     this.modalController.dismiss({
       'dismissed': true
     })
-  }
-
-  loadAddress() {
-    this.addressService.load().then(data => {
-      this.addresses = data;
-      console.log(this.addresses);
-    });
   }
 
 }
