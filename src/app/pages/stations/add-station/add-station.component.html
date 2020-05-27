@@ -8,7 +8,7 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content fullscreen>
 
   <div class="searchBar">
     <ion-searchbar animated></ion-searchbar>
@@ -16,22 +16,24 @@
 
 
   <ion-card class="cardResultSearch">
-    <ion-list>
+    <ion-card-title class="ion-padding" style="font-size: 20px;">
+      Résultat de Recherche
+    </ion-card-title>
 
-      <ion-item class="ion-padding">
-        <ion-avatar slot="start">
-          <img src="./assets/img/maxresdefault.jpg">
-        </ion-avatar>
-        <ion-label>Versailles Chantier</ion-label>
-      </ion-item>
+    <ion-item class="ion-padding itemResult">
+      <ion-avatar slot="start">
+        <img src="./assets/img/maxresdefault.jpg">
+      </ion-avatar>
+      <ion-label>Versailles Chantier</ion-label>
+    </ion-item>
 
-      <ion-item class="ion-padding">
-        <ion-avatar slot="start">
-          <img src="./assets/img/maxresdefault.jpg">
-        </ion-avatar>
-        <ion-label>Versailles Chantier</ion-label>
-      </ion-item>
-    </ion-list>
+    <ion-item class="ion-padding">
+      <ion-avatar slot="start">
+        <img src="./assets/img/maxresdefault.jpg">
+      </ion-avatar>
+      <ion-label>Versailles Chantier</ion-label>
+    </ion-item>
+
   </ion-card>
 
 </ion-content>

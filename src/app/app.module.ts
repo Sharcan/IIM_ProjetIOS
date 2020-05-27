@@ -34,6 +34,8 @@ import { AddStationComponent } from './pages/stations/add-station/add-station.co
 
 // Infos
 import { InformationsMainComponent } from './pages/infos/informations-main/informations-main.component';
+import { MetroComponent } from './pages/infos/metro-component/metro-component.component';
+import { RERComponent } from './pages/infos/rer/rer.component';
 
 @NgModule({
   declarations: [
@@ -57,11 +59,13 @@ import { InformationsMainComponent } from './pages/infos/informations-main/infor
 
     // Informations
     InformationsMainComponent,
+    MetroComponent,
+    RERComponent,
   ],
   entryComponents: [],
   imports: [
     BrowserModule,
-    IonicModule.forRoot({animated: false}),
+    IonicModule.forRoot(),
     AppRoutingModule,
   ],
   providers: [

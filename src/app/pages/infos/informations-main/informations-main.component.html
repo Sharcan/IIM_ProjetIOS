@@ -1,6 +1,32 @@
-<ion-content>
-  <p>Salut</p>
+<ion-header>
+  <ion-toolbar>
+    <ion-title>INFOS TRAFIC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="ion-padding">
+
+  <ion-segment value="metro" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="metro">
+      <ion-label>Métro</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="RER">
+      <ion-label>RER</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="tramway">
+      <ion-label>Tramway</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  
+  <app-metro-component *ngIf="selectedSegment === 'metro'"></app-metro-component>
+
+  <app-rer *ngIf="selectedSegment === 'RER'"></app-rer>
+
+
 </ion-content>
+
+
 <ion-footer>
   <app-tabs></app-tabs>
 </ion-footer>
