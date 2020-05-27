@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { AddressService } from './../../shared/address.service';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-search',
@@ -10,11 +11,15 @@ import { AddressService } from './../../shared/address.service';
 export class SearchComponent implements OnInit {
 
   addresses;
+  start;
+  end;
 
   constructor(private modalController: ModalController, public addressService: AddressService) { }
 
-  ngOnInit() {
-    this.addressService.load().subscribe(data => {
+  ngOnInit() {}
+
+  searchAddress() {
+    this.addressService.load(this.end).subscribe(data => {
       this.addresses = data['features'];
       console.log(this.addresses);
     });

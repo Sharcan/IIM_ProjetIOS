@@ -7,11 +7,12 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 })
 export class AddressService {
 
-  data;
+  research;
 
   constructor(private http: HttpClient) { }
 
-  load() {
-    return this.http.get('https://api-adresse.data.gouv.fr/search/?q=8+bd+du+port');
+  load(research) {
+    this.research = research.replace(' ', '+')
+    return this.http.get('https://api-adresse.data.gouv.fr/search/?q=' + this.research + '&limit=10');
   }
 }
