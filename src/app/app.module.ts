@@ -39,6 +39,7 @@ import { AddStationComponent } from './pages/stations/add-station/add-station.co
 import { InformationsMainComponent } from './pages/infos/informations-main/informations-main.component';
 import { MetroComponent } from './pages/infos/metro-component/metro-component.component';
 import { RERComponent } from './pages/infos/rer/rer.component';
+import { TrajectComponent } from './pages/traject/traject.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { RERComponent } from './pages/infos/rer/rer.component';
 
     HoverSearchComponent,
     SearchComponent,
+    TrajectComponent,
     // Favoris
     FavorisMainComponent,
 

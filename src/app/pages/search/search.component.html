@@ -18,7 +18,7 @@
       </ion-item>
       <ion-list>
         <ion-item *ngFor="let address of addresses">
-          <ion-label>{{ address.properties.name }}, {{ address.properties.postcode }} {{ address.properties.city }}</ion-label>
+          <ion-label [routerLink]="['traject', address.geometry]" (click)="dismiss()">{{ address.properties.name }}, {{ address.properties.postcode }} {{ address.properties.city }}</ion-label>
         </ion-item>
       </ion-list>
   </div>
