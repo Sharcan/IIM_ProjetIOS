@@ -7,6 +7,7 @@ import { StationMainComponent } from './pages/stations/station-main/station-main
 import { TitresMainComponent } from './pages/titres/titres-main/titres-main.component';
 import { InformationsMainComponent } from './pages/infos/informations-main/informations-main.component';
 import { AddStationComponent } from './pages/stations/add-station/add-station.component';
+import { TitreInformationComponent } from './pages/titres/titre-information/titre-information.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'informations',
     component: InformationsMainComponent
+  },
+  {
+    path: 'titreinformation',
+    component: TitreInformationComponent
   },
 
 

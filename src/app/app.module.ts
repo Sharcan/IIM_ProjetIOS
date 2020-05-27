@@ -30,6 +30,7 @@ import { FavorisMainComponent } from './pages/favoris/favoris-main/favoris-main.
 
 // Titres
 import { TitresMainComponent } from './pages/titres/titres-main/titres-main.component';
+import { TitreInformationComponent } from './pages/titres/titre-information/titre-information.component'
 
 // Stations
 import { StationMainComponent } from './pages/stations/station-main/station-main.component';
@@ -54,6 +55,7 @@ import { RERComponent } from './pages/infos/rer/rer.component';
 
     // Titres
     TitresMainComponent,
+    TitreInformationComponent,
 
     // Stations
     StationMainComponent,
