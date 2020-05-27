@@ -1,0 +1,64 @@
+.Location{
+    background-color: #D9F2ED;
+    width: 278px;
+    color: #000;
+    font-size: 25px;
+    height: 47px;
+    border-radius: 4px;
+    margin-left: 15%;
+    margin-top: -70%;
+    padding: 2%;
+}
+.title {
+    margin-left: 5%;
+}
+
+.volume{
+    background-color: #D9F2ED;
+    width: 278px;
+    color: #000;
+    font-size: 25px;
+    height: 91px;
+    border-radius: 4px;
+    margin-left: 15%;
+    padding: 2%;
+    margin-top: -65%;
+    text-align: center;
+}
+
+ion-toolbar{
+    --background: #4BC0AD;
+    color: white;
+}
+
+ion-content{
+    --background: #4BC0AD;
+}
+
+ion-toggle{
+    --background:rgb(120,120,128,16%);
+    --background-checked: #4BC0AD;
+
+    --handle-background: #FFF;
+    --handle-background-checked: #FFF;
+    --handle-spacing: 2px;
+
+    height: 22px;
+    float: right;
+}
+
+ion-range{
+    --knob-background: white;
+    --knob-size: 28px;
+    --knob-box-shadow: 5px 5px 16px 2px rgba(0,0,0,0.4);
+}
+
+ion-button{
+    width: 296.77px;
+    height: 45.79;
+    margin-left: 10%;
+    --color: black;
+    --background: rgb(255,255,255,50%);
+
+    margin-bottom: -70%;
+}
