@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { TabsComponent } from './pages/tabs/tabs.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { HoverSearchComponent } from './hover-search/hover-search.component';
+import { SearchComponent } from './pages/search/search.component';
 
 // Favoris
 import { FavorisMainComponent } from './pages/favoris/favoris-main/favoris-main.component';
@@ -43,6 +44,7 @@ import { InformationsMainComponent } from './pages/infos/informations-main/infor
     SideMenuComponent,
 
     HoverSearchComponent,
+    SearchComponent,
     // Favoris
     FavorisMainComponent,
 
