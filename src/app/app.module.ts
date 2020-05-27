@@ -5,9 +5,7 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
-import { AppComponent } from './app.component';
-import { MapComponent } from './map/map.component';
+import { HttpClientModule } from "@angular/common/http";
 
 // Routing
 import { AppRoutingModule } from './app-routing.module';
@@ -15,11 +13,16 @@ import { AppRoutingModule } from './app-routing.module';
 // Component Native
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 
+// Services
+import { AddressService } from './shared/address.service';
+
 // Components
+import { AppComponent } from './app.component';
+import { MapComponent } from './map/map.component';
 import { HomeComponent } from './home/home.component';
-import { TabsComponent } from './pages/tabs/tabs.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { HoverSearchComponent } from './hover-search/hover-search.component';
+import { SearchComponent } from './pages/search/search.component';
 
 // Favoris
 import { FavorisMainComponent } from './pages/favoris/favoris-main/favoris-main.component';
@@ -41,10 +44,10 @@ import { RERComponent } from './pages/infos/rer/rer.component';
     AppComponent,
     HomeComponent,
     MapComponent,
-    TabsComponent,
     SideMenuComponent,
 
     HoverSearchComponent,
+    SearchComponent,
     // Favoris
     FavorisMainComponent,
 
@@ -65,12 +68,14 @@ import { RERComponent } from './pages/infos/rer/rer.component';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     StatusBar,
     Geolocation,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    AddressService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchComponent } from '../pages/search/search.component';
+
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-hover-search',
@@ -7,14 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HoverSearchComponent implements OnInit {
 
-  number = 6;
-
-  constructor() { }
+  constructor(public modalController: ModalController) { }
 
   ngOnInit() {}
 
-  coucou(num) {
-    console.log(num)
+  async createModal() {
+    const modal = await this.modalController.create({
+      component: SearchComponent
+    });
+    return await modal.present();
   }
 
 }
