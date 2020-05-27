@@ -23,6 +23,7 @@ import { HomeComponent } from './home/home.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { HoverSearchComponent } from './hover-search/hover-search.component';
 import { SearchComponent } from './pages/search/search.component';
+import { PopoverComponent } from './popover/popover.component';
 
 // Favoris
 import { FavorisMainComponent } from './pages/favoris/favoris-main/favoris-main.component';
@@ -45,6 +46,7 @@ import { RERComponent } from './pages/infos/rer/rer.component';
     HomeComponent,
     MapComponent,
     SideMenuComponent,
+    PopoverComponent,
 
     HoverSearchComponent,
     SearchComponent,

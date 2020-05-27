@@ -1,26 +1,11 @@
 
-<ion-item>
+<ion-grid>
+  <ion-row class="ion-align-items-center ion-justify-content-center">
 
-  <ion-grid>
-    <ion-row>
-  
-      <ion-col>
-        2
-      </ion-col>
-  
-      <ion-col>
-        3
-      </ion-col>
-  
-      <ion-col>
-        3Bis
-      </ion-col>
-  
-      <ion-col>
-        7
-      </ion-col>
-  
-    </ion-row>
-  </ion-grid>
-  
-</ion-item>
+
+    <ion-col size="3" *ngFor="let ligne of traficIncident; index as i" class="metroLine ion-align-self-center" (click)="moreInformations(i)">
+      {{ligne['line']}}
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
