@@ -1,13 +1,25 @@
 <div id="search">
   <div id="searchHeader">
-      <ion-title>TRAJET</ion-title>
-      <ion-buttons slot="end">
-        <ion-button (click)="dismiss()">
-          Fermer
-        </ion-button>
-      </ion-buttons>
+    <ion-title>TRAJET</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        Fermer
+      </ion-button>
+    </ion-buttons>
   </div>
-  <ion-content>
-
-  </ion-content>
+  <div id="searchContent">
+      <ion-item>
+        <ion-label position="floating">De :<ion-text color="danger"></ion-text></ion-label>
+        <ion-input required [(ngModel)]="start" type="text" value="Votre position"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Vers :<ion-text color="danger"></ion-text></ion-label>
+        <ion-input required [(ngModel)]="end" type="text" (keyup)="searchAddress()"></ion-input>
+      </ion-item>
+      <ion-list>
+        <ion-item *ngFor="let address of addresses">
+          <ion-label>{{ address.properties.name }}, {{ address.properties.postcode }} {{ address.properties.city }}</ion-label>
+        </ion-item>
+      </ion-list>
+  </div>
 </div>
