@@ -57,7 +57,7 @@ export class TrajectComponent implements OnInit {
         //Traject
         L.Routing.control({
           router: L.Routing.osrmv1({
-            serviceUrl: `http://router.project-osrm.org/route/v1/`
+            serviceUrl: `http://router.project-osrm.org/route/v1`
           }),
           showAlternatives: true,
           lineOptions: {styles: [{color: '#242c81', weight: 7}]},
@@ -67,7 +67,7 @@ export class TrajectComponent implements OnInit {
           routeWhileDragging: true,
           waypoints: [
             L.latLng(this.latitude, this.longitude),
-            L.latLng(this.coordinates[0], this.coordinates[1])
+            L.latLng(this.coordinates[1], this.coordinates[0])
           ]
         }).addTo(this.map);
 
