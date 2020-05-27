@@ -37,6 +37,9 @@ import { InformationsMainComponent } from './pages/infos/informations-main/infor
 import { MetroComponent } from './pages/infos/metro-component/metro-component.component';
 import { RERComponent } from './pages/infos/rer/rer.component';
 
+// Réglages
+import {ReglagesComponent} from './pages/reglages/reglages.component'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,6 +64,9 @@ import { RERComponent } from './pages/infos/rer/rer.component';
     InformationsMainComponent,
     MetroComponent,
     RERComponent,
+
+    // Reglage
+    ReglagesComponent,
   ],
   entryComponents: [],
   imports: [
