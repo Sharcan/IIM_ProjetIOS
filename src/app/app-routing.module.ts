@@ -8,6 +8,7 @@ import { TitresMainComponent } from './pages/titres/titres-main/titres-main.comp
 import { InformationsMainComponent } from './pages/infos/informations-main/informations-main.component';
 import { AddStationComponent } from './pages/stations/add-station/add-station.component';
 import { TitreInformationComponent } from './pages/titres/titre-information/titre-information.component';
+import {ReglagesComponent} from './pages/reglages/reglages.component'
 
 const routes: Routes = [
   {
@@ -39,6 +40,9 @@ const routes: Routes = [
     path: 'titreinformation',
     component: TitreInformationComponent
   },
+   { path : 'reglages',
+    component: ReglagesComponent
+  }
 
 
   // Tabs
