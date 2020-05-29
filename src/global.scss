@@ -27,3 +27,16 @@
 
 /* Leaflet */
 @import "~leaflet/dist/leaflet.css";
+
+
+ion-toolbar{
+    --background: #4BC0AD;
+    --border-style: none;
+    --color: white;
+    --padding-top: 15px !important;
+    --padding-bottom: 15px !important;
+
+    a{
+        --color: white;
+    }
+}

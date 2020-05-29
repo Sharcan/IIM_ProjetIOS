@@ -40,9 +40,10 @@ import { AddStationComponent } from './pages/stations/add-station/add-station.co
 import { InformationsMainComponent } from './pages/infos/informations-main/informations-main.component';
 import { MetroComponent } from './pages/infos/metro-component/metro-component.component';
 import { RERComponent } from './pages/infos/rer/rer.component';
+import { TramComponent } from './pages/infos/tram/tram.component';
 
 // Réglages
-import {ReglagesComponent} from './pages/reglages/reglages.component'
+import {ReglagesComponent} from './pages/reglages/reglages.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import {ReglagesComponent} from './pages/reglages/reglages.component'
     InformationsMainComponent,
     MetroComponent,
     RERComponent,
+    TramComponent,
 
     // Reglage
     ReglagesComponent,
