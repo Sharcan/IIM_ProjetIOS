@@ -31,6 +31,7 @@ import { FavorisMainComponent } from './pages/favoris/favoris-main/favoris-main.
 
 // Titres
 import { TitresMainComponent } from './pages/titres/titres-main/titres-main.component';
+import { TitreInformationComponent } from './pages/titres/titre-information/titre-information.component'
 
 // Stations
 import { StationMainComponent } from './pages/stations/station-main/station-main.component';
@@ -41,6 +42,9 @@ import { InformationsMainComponent } from './pages/infos/informations-main/infor
 import { MetroComponent } from './pages/infos/metro-component/metro-component.component';
 import { RERComponent } from './pages/infos/rer/rer.component';
 import { TramComponent } from './pages/infos/tram/tram.component';
+
+import { TrajectComponent } from './pages/traject/traject.component';
+
 
 // Réglages
 import {ReglagesComponent} from './pages/reglages/reglages.component';
@@ -55,11 +59,13 @@ import {ReglagesComponent} from './pages/reglages/reglages.component';
 
     HoverSearchComponent,
     SearchComponent,
+    TrajectComponent,
     // Favoris
     FavorisMainComponent,
 
     // Titres
     TitresMainComponent,
+    TitreInformationComponent,
 
     // Stations
     StationMainComponent,

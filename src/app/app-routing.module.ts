@@ -7,6 +7,8 @@ import { StationMainComponent } from './pages/stations/station-main/station-main
 import { TitresMainComponent } from './pages/titres/titres-main/titres-main.component';
 import { InformationsMainComponent } from './pages/infos/informations-main/informations-main.component';
 import { AddStationComponent } from './pages/stations/add-station/add-station.component';
+import { TrajectComponent } from './pages/traject/traject.component';
+import { TitreInformationComponent } from './pages/titres/titre-information/titre-information.component';
 import {ReglagesComponent} from './pages/reglages/reglages.component'
 
 const routes: Routes = [
@@ -36,7 +38,14 @@ const routes: Routes = [
     component: InformationsMainComponent
   },
   {
-    path : 'reglages',
+    path: 'traject',
+    component: TrajectComponent
+  },
+  {
+    path: 'titreinformation',
+    component: TitreInformationComponent
+  },
+  { path : 'reglages',
     component: ReglagesComponent
   }
 

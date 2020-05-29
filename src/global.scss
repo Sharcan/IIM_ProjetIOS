@@ -27,7 +27,7 @@
 
 /* Leaflet */
 @import "~leaflet/dist/leaflet.css";
-
+@import "~leaflet-routing-machine/dist/leaflet-routing-machine.css";
 
 ion-toolbar{
     --background: #4BC0AD;
@@ -40,3 +40,4 @@ ion-toolbar{
         --color: white;
     }
 }
+
