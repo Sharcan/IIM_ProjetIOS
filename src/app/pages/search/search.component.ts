@@ -21,7 +21,6 @@ export class SearchComponent implements OnInit {
   searchAddress() {
     this.addressService.load(this.end).subscribe(data => {
       this.addresses = data['features'];
-      console.log(this.addresses);
     });
   }
 
