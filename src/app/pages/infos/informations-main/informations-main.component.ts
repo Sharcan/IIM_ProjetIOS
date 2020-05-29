@@ -15,7 +15,6 @@ export class InformationsMainComponent implements OnInit {
 
 
   segmentChanged(e: any) {
-    console.log('Segment changed', e);
     this.selectedSegment = e.detail.value;
   }
 
