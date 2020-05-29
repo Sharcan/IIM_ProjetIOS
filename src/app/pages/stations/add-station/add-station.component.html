@@ -9,30 +9,34 @@
 
 <ion-content fullscreen>
 
-  <div class="searchBar">
-    <ion-searchbar animated></ion-searchbar>
-  </div>
+  <ion-item class="selectTransport">
+    <ion-label>Type de Transport</ion-label>
+    <ion-select placeholder="Selectionner" [(ngModel)]="selectedTransport">
+      <ion-select-option value="metros">Métro</ion-select-option>
+      <ion-select-option value="tramways">Tramway</ion-select-option>
+      <ion-select-option value="rers">RER</ion-select-option>
+    </ion-select>
+
+  </ion-item>
+  <ion-button color="primary" (click)="getLines(selectedTransport)" class="ion-padding">Voir les lignes</ion-button>
+  
+  <ion-item *ngIf="lines" class="selectTransport">
+    <ion-label>Ligne</ion-label>
+    <ion-select placeholder="Selectionner" [(ngModel)]="selectedLine">
+      <ion-select-option value="{{ligne.code}}" *ngFor="let ligne of lines">{{ligne.name}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button color="primary" (click)="getLineStation(selectedTransport, selectedLine)" class="ion-padding" *ngIf="lines">Voir les stations</ion-button>
 
 
-  <ion-card class="cardResultSearch">
-    <ion-card-title class="ion-padding" style="font-size: 20px;">
-      Résultat de Recherche
-    </ion-card-title>
-
-    <ion-item class="ion-padding itemResult">
-      <ion-avatar slot="start">
-        <img src="./assets/img/maxresdefault.jpg">
-      </ion-avatar>
-      <ion-label>Versailles Chantier</ion-label>
-    </ion-item>
-
-    <ion-item class="ion-padding">
-      <ion-avatar slot="start">
-        <img src="./assets/img/maxresdefault.jpg">
-      </ion-avatar>
-      <ion-label>Versailles Chantier</ion-label>
-    </ion-item>
-
-  </ion-card>
+  <ion-item *ngIf="station" class="selectTransport">
+    <ion-label>Station</ion-label>
+    <ion-select placeholder="Selectionner" [(ngModel)]="selectedStation">
+      <ion-select-option value="{{station.name}}" *ngFor="let station of station">{{station.name}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button color="danger" class="ion-padding" *ngIf="station" (click)="addToFav()">
+    Ajouter cette stations aux favoris
+  </ion-button>
 
 </ion-content>

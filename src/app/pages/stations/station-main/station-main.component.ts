@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { RatpService } from 'src/app/shared/ratp.service';
+
+import { stationsFavorites } from '../../../shared/listStations';
+
 
 @Component({
   selector: 'app-station-main',
@@ -7,8 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StationMainComponent implements OnInit {
 
-  constructor() { }
+  stationsFavorites = stationsFavorites;
+
+  constructor(private ratpService: RatpService) { }
 
   ngOnInit() {}
+
+
+
+  removeFavoritesStation(id) {
+    console.log('je passe par la');
+    stationsFavorites.splice(id, 1);
+  }
 
 }
