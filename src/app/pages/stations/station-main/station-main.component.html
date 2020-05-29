@@ -1,9 +1,8 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title slot="secondary">STATIONS</ion-title>
-    <a slot="end" class="ion-padding topLink" routerLink="/addstation">ajouter</a>
-  </ion-toolbar>
-</ion-header>
+
+<ion-toolbar>
+  <ion-title slot="start">STATIONS</ion-title>
+  <a slot="end" class="ion-padding topLink" routerLink="/addstation">ajouter</a>
+</ion-toolbar>
 
 
 
@@ -19,7 +18,7 @@
 
     <!--CARD-->
     <ion-item>
-      <ion-card>
+      <ion-card class="cardStation">
         <ion-card-header>
      
           <ion-card-title style="color: black; float: left; font-size: 1.4rem;" class="ion-padding">
@@ -121,7 +120,3 @@
 
 
 </ion-content>
-    
-<ion-footer>
-  <app-tabs></app-tabs>
-</ion-footer>
