@@ -24,12 +24,14 @@ import { HomeComponent } from './home/home.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { HoverSearchComponent } from './hover-search/hover-search.component';
 import { SearchComponent } from './pages/search/search.component';
+import { PopoverComponent } from './popover/popover.component';
 
 // Favoris
 import { FavorisMainComponent } from './pages/favoris/favoris-main/favoris-main.component';
 
 // Titres
 import { TitresMainComponent } from './pages/titres/titres-main/titres-main.component';
+import { TitreInformationComponent } from './pages/titres/titre-information/titre-information.component'
 
 // Stations
 import { StationMainComponent } from './pages/stations/station-main/station-main.component';
@@ -41,12 +43,16 @@ import { MetroComponent } from './pages/infos/metro-component/metro-component.co
 import { RERComponent } from './pages/infos/rer/rer.component';
 import { TrajectComponent } from './pages/traject/traject.component';
 
+// Réglages
+import {ReglagesComponent} from './pages/reglages/reglages.component'
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MapComponent,
     SideMenuComponent,
+    PopoverComponent,
 
     HoverSearchComponent,
     SearchComponent,
@@ -56,6 +62,7 @@ import { TrajectComponent } from './pages/traject/traject.component';
 
     // Titres
     TitresMainComponent,
+    TitreInformationComponent,
 
     // Stations
     StationMainComponent,
@@ -65,6 +72,9 @@ import { TrajectComponent } from './pages/traject/traject.component';
     InformationsMainComponent,
     MetroComponent,
     RERComponent,
+
+    // Reglage
+    ReglagesComponent,
   ],
   entryComponents: [],
   imports: [
