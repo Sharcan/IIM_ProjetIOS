@@ -31,7 +31,10 @@ import { FavorisMainComponent } from './pages/favoris/favoris-main/favoris-main.
 
 // Titres
 import { TitresMainComponent } from './pages/titres/titres-main/titres-main.component';
-import { TitreInformationComponent } from './pages/titres/titre-information/titre-information.component'
+import { TitreInformationComponent } from './pages/titres/titre-information/titre-information.component';
+import { TitreNavigoComponent } from './pages/titres/titre-navigo/titre-navigo.component';
+import { TitrePerduComponent } from './pages/titres/titre-navigo/titre-perdu/titre-perdu.component';
+import { TitreRenouvelerComponent } from './pages/titres/titre-navigo/titre-renouveler/titre-renouveler.component';
 
 // Stations
 import { StationMainComponent } from './pages/stations/station-main/station-main.component';
@@ -66,6 +69,9 @@ import {ReglagesComponent} from './pages/reglages/reglages.component';
     // Titres
     TitresMainComponent,
     TitreInformationComponent,
+    TitreNavigoComponent,
+    TitrePerduComponent,
+    TitreRenouvelerComponent,
 
     // Stations
     StationMainComponent,

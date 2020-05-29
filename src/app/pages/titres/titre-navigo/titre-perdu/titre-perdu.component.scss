@@ -1,0 +1,49 @@
+ion-toolbar {
+    --background:#4BC0AD;
+}
+
+#back {
+color:white;
+float:right;
+text-decoration:none;
+padding-top: 10%;
+}
+
+#info{
+text-decoration: underline;
+float: left;
+padding-top: 10%;
+padding-left: 5px;;
+}
+
+#progress {
+    height: 110%;
+    position:absolute;
+    
+}
+
+h1 {
+    margin-left: 15%;
+    font-size: 25px;
+}
+
+h2 {
+    float:right;
+    margin-left: 15%;
+    font-size: 20px;
+}
+
+h3 {
+    float: right;
+    margin-left: 15%;
+    font-size: 15px;
+}
+
+ion-button {
+    margin-left: 15%;
+    
+}
+
+#chemin {
+    padding-bottom:35%;
+}

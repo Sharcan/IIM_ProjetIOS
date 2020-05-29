@@ -1,0 +1,30 @@
+ion-toolbar {
+    --background:#4BC0AD;
+}
+
+#back {
+color:white;
+float:right;
+text-decoration:none;
+padding-top: 10%;
+}
+
+#info{
+text-decoration: underline;
+float: left;
+padding-top: 10%;
+padding-left: 5px;;
+}
+
+ion-button {
+    --background:rgba(255, 255, 255, 0.79);
+    --color:#000000;
+    margin: auto;
+    width: 75%;
+    height: 10%;
+}
+
+#expiration {
+    margin: auto;
+    font-size: 25px;
+}
