@@ -11,7 +11,7 @@ import { NgModel } from '@angular/forms';
 export class SearchComponent implements OnInit {
 
   addresses;
-  start;
+  start = "Votre position";
   end;
 
   constructor(private modalController: ModalController, public addressService: AddressService) { }
