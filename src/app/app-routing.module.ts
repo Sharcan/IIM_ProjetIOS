@@ -41,10 +41,11 @@ const routes: Routes = [
     path: 'traject',
     component: TrajectComponent
   },
+  {
     path: 'titreinformation',
     component: TitreInformationComponent
   },
-   { path : 'reglages',
+  { path : 'reglages',
     component: ReglagesComponent
   }
 
