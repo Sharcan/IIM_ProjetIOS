@@ -1,6 +1,6 @@
 
 <ion-toolbar>
-  <ion-title>INFOS TRAFIC</ion-title>
+  <ion-title slot="start">INFOS TRAFIC</ion-title>
 </ion-toolbar>
 
 
@@ -25,6 +25,8 @@
   <app-metro-component *ngIf="selectedSegment === 'metro'"></app-metro-component>
 
   <app-rer *ngIf="selectedSegment === 'RER'"></app-rer>
+
+  <app-tram *ngIf="selectedSegment === 'tramway'"></app-tram>
 
 
 </div>

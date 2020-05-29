@@ -6,23 +6,24 @@ import { PopoverController } from '@ionic/angular';
 import { PopoverComponent } from '../../../popover/popover.component';
 
 @Component({
-  selector: 'app-rer',
-  templateUrl: './rer.component.html',
-  styleUrls: ['./rer.component.scss'],
+  selector: 'app-tram',
+  templateUrl: './tram.component.html',
+  styleUrls: ['./tram.component.scss'],
 })
-export class RERComponent implements OnInit {
+export class TramComponent implements OnInit {
 
   trafic: Array<object>;
+
   traficIncident: Array<object> = [];
   traficTrav: Array<object> = [];
-
 
   constructor(private ratpService: RatpService, public popoverController: PopoverController) { }
 
   ngOnInit() {
+
     this.ratpService.getTrafic().subscribe(
       res => {
-        this.trafic = res['result']['rers'];
+        this.trafic = res['result']['tramways'];
 
         this.trafic.forEach(element => {
           if (element['slug'] === 'critical') {
@@ -32,10 +33,14 @@ export class RERComponent implements OnInit {
             this.traficTrav.push(element);
           }
         });
+
+      },
+      err => {
+
       }
     )
-  }
 
+  }
 
   async moreInformations(ev) {
     const popover = await this.popoverController.create({
@@ -46,4 +51,5 @@ export class RERComponent implements OnInit {
     });
     return await popover.present();
   }
+
 }
