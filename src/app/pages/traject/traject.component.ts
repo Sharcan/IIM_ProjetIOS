@@ -58,7 +58,7 @@ export class TrajectComponent implements OnInit {
         L.Routing.control({
           router: L.Routing.osrmv1({
             serviceUrl: `http://router.project-osrm.org/route/v1`,
-            profile: 'car'
+            useHints: false
           }),
           showAlternatives: true,
           lineOptions: {styles: [{color: '#242c81', weight: 7}]},
