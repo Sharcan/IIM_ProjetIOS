@@ -1,1 +1,19 @@
-<ion-toolbar><a routerLink="/titres">Hello</a></ion-toolbar>
+<ion-toolbar>
+    <ion-text id="info" slot="start">INFORMATION</ion-text>
+    <a id="back" routerLink="/titres">Retour</a>
+</ion-toolbar>
+
+
+<ion-content [scrollEvents]="true">
+<ion-text>
+    <h1 id="titre">Et si vous achetiez vos titres de transport depuis votre appli RATP ?</h1>
+    <h2 id="sous-titre">Un service disponible sur votre appli RATP !</h2>
+    <h2 id="argument">Grâce à votre appli RATP, achetez où vous voulez et quand vous voulez vos tickets t+ et forfaits Navigo Mois et Semaine à partir de votre téléphone !</h2>
+    <h3>A vous de choisir :</h3>
+    <h4>- Si vous souhaitez voyager avec votre téléphone, c’est désormais possible. Vous achetez votre titre puis validez avec votre téléphone ! Facile, non ?</h4>
+    <h4>- Si vous souhaitez voyager avec un passe Navigo sans avoir à passer à l’automate, c’est possible aussi. Vous achetez et chargez votre titre sur votre passe en l’apposant au dos de votre téléphone. Pratique non </h4>
+    <h2>Quelles sont les règles spécifiques ?</h2>
+    <h4>Toutes les combinaisons de titres ne sont pas possibles sur le téléphone.
+        Ainsi vous ne pouvez pas charger simultanément des t+ plein tarif et des t+ tarif réduit. En revanche, vous pouvez avoir un forfait Navigo et des tickets t+ en même temps. Dans ce cas, lors de vos déplacements, c’est votre forfait qui est validé en priorité pendant sa période de validité. Aucun ticket ne vous sera alors décompté.</h4>
+</ion-text>
+</ion-content>
